@@ -1,0 +1,6 @@
+<app-first-child [data]="firstChildData"></app-first-child>
+<app-second-child [data]="secondChildData"></app-second-child>
+<app-third-child #thirdChild [firstChildData]="firstChildData" [secondChildData]="secondChildData"></app-third-child>
+
+<br><br>
+<button (click)="triggerButtonClick()">Trigger Above Button Click</button>
